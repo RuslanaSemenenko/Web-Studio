@@ -115,7 +115,8 @@ body {
 .list-item,
 .item-list,
 .main-item,
-.hero-item {
+.hero-item,
+.footer-list-item {
   list-style: none;
 }
 
@@ -190,8 +191,7 @@ body {
 }
 
 .tagline {
-  padding-top: 94px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .paragraph {
@@ -305,7 +305,8 @@ body {
 }
 
 .list-item {
-  margin-bottom: 9px;
+  align-items: center;
+
 }
 
 .logo-icon {
@@ -332,6 +333,10 @@ body {
 
 .address-list {
   margin-top: 20px;
+}
+
+.footer-list-item {
+  margin-bottom: 9px;
 }
 
 .button:hover,
