@@ -181,6 +181,10 @@ body {
   gap: 30px;
 }
 
+.item-list {
+  width: 270px;
+}
+
 .tagline {
   font-weight: 700;
   font-size: 14px;
@@ -209,6 +213,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
 }
 
 .section-subtitle {
@@ -231,8 +236,6 @@ body {
 .secondary-menu {
   display: flex;
   gap: 30px;
-  padding-top: 50px;
-  padding-bottom: 94px;
 }
 
 .box-section {
