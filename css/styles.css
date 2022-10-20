@@ -116,7 +116,9 @@ body {
 .item-list,
 .main-item,
 .hero-item,
-.footer-list-item {
+.footer-list-item,
+.soc-list,
+.test-list {
   list-style: none;
 }
 
@@ -132,6 +134,11 @@ body {
 
 .container-box {
   background: #2f303a;
+  background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+   url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -267,6 +274,39 @@ body {
   letter-spacing: 0.03em;
 }
 
+.soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.soc-link {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 50%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: #2196F3;
+}
+
+.soc-link:hover,
+.soc-link:focus .soc-link-icon {
+  fill: #FFFFFF;;
+}
+
+
 .box-list {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -281,6 +321,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   padding-top: 10px;
+  margin-bottom: 16px;
 }
 
 .box {
@@ -310,6 +351,35 @@ body {
 .list-item {
   align-items: center;
 }
+
+.caption-box {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.test-list {
+  display: flex;
+  gap: 30px;
+}
+
+.test-item {
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+}
+
+.test-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  display: block;
+}
+
 
 .logo-icon {
   font-family: 'Raleway', sans-serif;
