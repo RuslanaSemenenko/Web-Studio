@@ -443,6 +443,7 @@ body {
 }
 
 .logo-icon {
+  display: block;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -580,13 +581,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  padding-bottom: 20px;
 }
 
 .footer-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   margin-left: 70px;
 }
 
