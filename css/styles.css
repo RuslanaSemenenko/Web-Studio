@@ -86,22 +86,14 @@ body {
   color: #afb1b8;
 }
 
-.list-item:hover,
-.list-item:focus {
-  color: var(--logo-color);
-}
-
-.list-item:hover svg {
-  fill: #2196f3;
-}
-
-.list-item:focus svg {
-  fill: var(--logo-color);
-}
-
 .link-icon-soc {
   margin-right: 10px;
   vertical-align: middle;
+}
+
+.link-icon-soc:hover,
+.link-icon-soc:focus svg {
+  fill: #2196f3;
 }
 
 .navigation {
@@ -124,6 +116,11 @@ body {
 
 .item-link:hover,
 .item-link:focus {
+  color: #2196f3;
+}
+
+.item-link:hover .link-icon-soc,
+.item-link:focus .link-icon-soc {
   color: #2196f3;
 }
 
@@ -223,6 +220,7 @@ body {
   justify-content: center;
   margin-bottom: 30px;
   height: 120px;
+  border-radius: 4px;
 }
 
 .item-list {
