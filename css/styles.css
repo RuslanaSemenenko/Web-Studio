@@ -59,6 +59,18 @@ body {
   margin-right: 93px;
 }
 
+.current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: #2196F3;
+}
+
 .text {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -334,6 +346,7 @@ body {
   justify-content: center;
   fill: currentColor;
   color: #afb1b8;
+  transition: background-color 250ms, fill 250ms linear;;
 }
 
 .soc-link:hover,
@@ -583,6 +596,7 @@ body {
   justify-content: center;
   fill: currentColor;
   color: #ffffff;
+  transition: background-color 250ms linear, fill 250ms linear;
 }
 
 .footer-soc-link:hover,
