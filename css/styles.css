@@ -112,6 +112,7 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
+  transition: color 250ms linear;
 }
 
 .item-link:hover,
@@ -131,6 +132,7 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+  transition: color 250ms linear;
 }
 
 .item,
@@ -203,6 +205,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  transition: color 250ms linear;
 }
 
 .hero-menu {
@@ -436,6 +439,7 @@ body {
   justify-content: center;
   fill: currentColor;
   color: #afb1b8;
+  transition: color 250ms linear;
 }
 
 .test-link:hover,
@@ -499,6 +503,7 @@ body {
   border: 0;
   border-radius: 4px;
   padding: 6px 22px;
+  transition: color 250ms linear;
 }
 
 .items {
