@@ -59,7 +59,12 @@ body {
   margin-right: 93px;
 }
 
-.current::after {
+.link.current {
+  position: relative;
+  color: #2196f3;
+}
+
+.link.current::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -124,7 +129,9 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
-  transition: color 250ms linear;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-link:hover,
