@@ -224,7 +224,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  transition: color 250ms linear;
+  transition: color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-menu {
@@ -353,7 +353,7 @@ body {
   justify-content: center;
   fill: currentColor;
   color: #afb1b8;
-  transition: background-color 250ms, fill 250ms linear;
+  transition: background-color 250ms, fill 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-link:hover,
