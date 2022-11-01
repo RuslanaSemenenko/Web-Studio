@@ -705,6 +705,17 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-close:hover svg {
+  fill: #2196f3;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-close {
   width: 30px;
   height: 30px;
@@ -718,15 +729,4 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-.modal-close:hover svg {
-  fill: #2196f3;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
