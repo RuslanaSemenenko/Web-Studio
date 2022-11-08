@@ -446,7 +446,14 @@
                 <div class="box-mailto">
                   <p class="footer-mailto">Підпишіться на розсилку</p>
                   <form class="modal-form">
-                    <input type="text" class="modal-input">
+                    <input type="text" class="modal-input" placeholder="E-mail" name="online-email">
+                    <button type="submit" class="modal-btn">Підписатися
+                      <span class="btn-telegram">
+                        <svg class="icon-telegram" width="24" height="24">
+                          <use href="./images/icons.svg#icon-telegram"></use>
+                        </svg>
+                      </span>
+                    </button>
                   </form>
                 </div>
             </div>
@@ -460,10 +467,10 @@
               </button>
               <p class="modal-titel">Залиште свої дані, ми вам передзвонимо</p>
               <form class="form-modal">
-                <input type="text" name="user-name" class="input-modal">
-                <input type="text" name="user-tel" class="input-modal">
-                <input type="text" name="user-email" class="input-modal">
-                <input type="text" name="user-text" class="input-modal-text">
+                <input type="text" name="user-name" class="input-modal" placeholder="Ім'я">
+                <input type="text" name="user-tel" class="input-modal" placeholder="Телефон">
+                <input type="text" name="user-email" class="input-modal" placeholder="Пошта">
+                <input type="text" name="user-text" class="input-modal-text" placeholder="Коментар">
                 <button class="button-modal">Відправити</button>
               </form>
             </div>

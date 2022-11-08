@@ -754,11 +754,57 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .box-mailto {
   margin-left: 93px;
+}
+
+.modal-input {
+  width: 358px;
+height: 50px;
+background-color: transparent;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+padding-left: 16px;
+}
+
+.modal-input::placeholder {
+  font-family: inherit;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.67;
+letter-spacing: 0.01em;
+color: #757575;
+}
+
+.modal-btn {
+  font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.75;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+}
+
+.modal-btn {
+  background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+display: inline;
+min-width: 200px;
+height: 50px;
+cursor: pointer;
+}
+
+.icon-telegram {
+  vertical-align: middle;
+  margin-left: 6px;
 }
 
 .input-modal {
@@ -787,14 +833,19 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  padding: 10px 52px;
 }
 
 .button-modal {
-  position: absolute;
   width: 200px;
   height: 50px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  border: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
+
