@@ -467,10 +467,39 @@
               </button>
               <p class="modal-titel">Залиште свої дані, ми вам передзвонимо</p>
               <form class="form-modal">
-                <input type="text" name="user-name" class="input-modal" placeholder="Ім'я">
-                <input type="text" name="user-tel" class="input-modal" placeholder="Телефон">
-                <input type="text" name="user-email" class="input-modal" placeholder="Пошта">
-                <input type="text" name="user-text" class="input-modal-text" placeholder="Коментар">
+                <div class="input-wrap">
+                  <label>
+                    <span class="modal-form-text">Ім'я</span>
+                <input type="text" name="user-name" class="input-modal">
+                <svg class="modal-input-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              
+              </label>
+              </div>
+              <div class="input-wrap">
+                  <label class="modal-form">
+                    <span class="modal-form-text">Телефон</span>
+                <input type="text" name="user-tel" class="input-modal">
+                <svg class="modal-input-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </label>
+               </div>
+               <div class="input-wrap">
+                  <label lass="modal-form">
+                    <span class="modal-form-text">Пошта</span>
+                <input type="text" name="user-email" class="input-modal">
+                <svg class="modal-input-icon" width="18" height="18">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                </label>
+               </div>
+                <label lass="modal-form">
+                  <span class="modal-form-text">Коментар</span>
+                <textarea type="text" name="user-text" class="input-modal-text" placeholder="Введіть текст">
+                </textarea>
+                </label>
                 <button class="button-modal">Відправити</button>
               </form>
             </div>
