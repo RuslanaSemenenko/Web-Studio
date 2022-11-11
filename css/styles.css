@@ -844,8 +844,13 @@ body {
   margin-bottom: 10px;
 }
 
-.text-coment:focus {
-  border-color: #2196f3;
+.text-coment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
 }
 
 .text-coment {
@@ -853,12 +858,10 @@ body {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
-  width: 100%;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 12px 16px;
-  resize: none;
+}
+
+.text-coment:focus {
+  border-color: #2196f3;
 }
 
 .modal-form-text {
