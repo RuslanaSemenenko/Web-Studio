@@ -817,7 +817,6 @@ body {
   position: absolute;
   left: 15px;
   top: 50%;
-  transform: translateY(32%);
 }
 
 .input-modal {
@@ -828,6 +827,7 @@ body {
   outline: transparent;
   padding-left: 35px;
   cursor: pointer;
+  transition: border-color 250ms linear, fill 250ms linear;
 }
 
 .input-modal:focus {
@@ -838,24 +838,70 @@ body {
   fill: #2196f3;
 }
 
-.modal-form-text:focus {
+.modal-field {
+  margin-bottom: 10px;
+}
+
+.text-coment:focus {
   border-color: #2196f3;
 }
 
-.input-modal-text {
+.text-coment {
   width: 100%;
-  height: 120px;
+  height: 100px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 20px;
+  padding: 10px;
+  resize: none;
 }
 
 .modal-form-text {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.67;
+  line-height: 14px;
+  letter-spacing: 0.01em;
   color: #757575;
+}
+
+.check-text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  align-items: center;
+}
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #171a24;
+  border-radius: 3px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.input-check:checked + .check-text span {
+  background-color: #2196f3;
+  border-color: transparent;
+  fill: #ffffff;
+  transition: color 250ms linear;
+}
+
+.check-conditions {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  margin-left: 7px;
+  transition: color 250ms linear;
 }
 
 .button-modal {

@@ -495,11 +495,21 @@
                 </svg>
                 </label>
                </div>
-                <label lass="modal-form">
-                  <span class="modal-form-text">Коментар</span>
-                <textarea type="text" name="user-text" class="input-modal-text" placeholder="Введіть текст">
-                </textarea>
-                </label>
+               <div class="modal-field">
+                <label for="user-comment" class="modal-form-text">Коментар</label>
+                  <textarea class="text-coment" name="user-comment" id="user-comment" placeholder="Введіть текст"></textarea>
+                </div>
+                <div class="modal-field">
+                  <input type="checkbox" name="privacy" id="privacy" class="input-check visually-hidden"/>
+                  <label for="privacy" class="check-text ">
+                    <span>
+                      <svg class="check-icon" width="16" height="15">
+                        <use href="./images/icons.svg#icon-check"></use>
+                      </svg>
+                    </span>
+                    Погоджуюся з розсилкою та приймаю</label>
+                  <a href="#" class="check-conditions">Умови договору</a>
+                </div>
                 <button class="button-modal">Відправити</button>
               </form>
             </div>
