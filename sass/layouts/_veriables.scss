@@ -1,0 +1,42 @@
+.hero-menu {
+  display: flex;
+  gap: 30px;
+}
+
+.item-list {
+  flex-basis: calc(100% - 90px / 4);
+}
+
+.item-list {
+  width: 270px;
+}
+
+.thumb-icon {
+  display: flex;
+  background-color: #f5f4fa;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.tagline {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.tagline {
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}

@@ -1,4 +1,18 @@
 @import './base/reset';
+@import './base/common';
+@import './utils/hidden';
 
-@import './header';
-@import './hero';
+@import './components/container';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/veriables';
+@import './layouts/benefits';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/modal';
+
+@import './portfolio/btn';
+@import './portfolio/images';
+

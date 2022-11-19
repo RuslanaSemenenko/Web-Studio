@@ -1,0 +1,133 @@
+.box {
+  background: #2f303a;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.logo-icon {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.logo-icon {
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.text-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.address-list {
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.footer-soc-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  list-style: none;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  color: #ffffff;
+  transition: background-color 250ms linear, fill 250ms linear;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: #2196f3;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus .footer-soc-link-icon {
+  fill: #ffffff;
+}
+
+.footer-page {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.footer-box {
+  margin-left: 70px;
+}
+
+.footer-box-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-mailto {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.box-mailto {
+  margin-left: 93px;
+}
+
+.icon-telegram {
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+.footer-list-item {
+  margin-bottom: 9px;
+}
+
+.images-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.list-item-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
