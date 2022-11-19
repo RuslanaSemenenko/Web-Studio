@@ -9,12 +9,14 @@
 }
 
 .caption-box {
+  margin-top: 94px;
   margin-bottom: 50px;
 }
 
 .test-list {
   display: flex;
   gap: 30px;
+  margin-bottom: 94px;
 }
 
 .test-item {
@@ -34,10 +36,10 @@
   fill: currentColor;
   color: #afb1b8;
   transition: color 250ms linear;
-}
-
-.test-link:hover,
-.test-link:focus {
+  &:hover,
+  &:focus {
   border: 1px solid #2196f3;
   fill: #2196f3;
 }
+}
+

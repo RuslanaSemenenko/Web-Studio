@@ -11,12 +11,11 @@
   line-height: 1.19;
   color: #2196f3;
   text-decoration: none;
-}
-
-.logo-icon {
+  & {
   display: block;
   margin: 0;
   margin-bottom: 20px;
+}
 }
 
 .text-logo {
@@ -61,11 +60,10 @@
   fill: currentColor;
   color: #ffffff;
   transition: background-color 250ms linear, fill 250ms linear;
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+  &:hover,
+  &:focus {
   background-color: #2196f3;
+}
 }
 
 .footer-soc-link:hover,

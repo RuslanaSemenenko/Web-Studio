@@ -1,3 +1,9 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .page {
   background: #ffffff;
   padding-top: 24px;
@@ -48,6 +54,10 @@
   color: #212121;
   text-decoration: none;
   transition: color 250ms linear;
+  &:hover,
+  &:focus {
+  color: #2196f3;
+}
 }
 
 .link-icon-soc {
@@ -60,6 +70,15 @@
   transition: fill 250ms linear;
 }
 
+.link-icon-soc {
+  margin-right: 10px;
+  vertical-align: middle;
+  &:hover,
+  &:focus {
+  fill: #2196f3;
+}
+}
+
 .item-link {
   font-weight: 500;
   font-size: 14px;
@@ -68,35 +87,18 @@
   color: #757575;
   text-decoration: none;
   transition: color 250ms linear;
-}
-
-.item-link:hover,
-.item-link:focus {
+  &:hover,
+  &:focus {
   color: #2196f3;
+}
 }
 
 .list-item:hover,
 .list-item:focus {
   color: #2196f3;
-}
-
-.list-item {
+  & {
   align-items: center;
 }
-
-.link-icon-soc {
-  margin-right: 10px;
-  vertical-align: middle;
-}
-
-.link-icon-soc:hover,
-.link-icon-soc:focus {
-  fill: #2196f3;
-}
-
-.link:hover,
-.link:focus {
-  color: #2196f3;
 }
 
 .list-item:hover svg {
@@ -105,12 +107,6 @@
 
 .list-item:focus svg {
   fill: #2196f3;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .link.current::after {
