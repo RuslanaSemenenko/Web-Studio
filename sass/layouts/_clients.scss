@@ -5,6 +5,25 @@
   color: #212121;
 }
 
+.nav__link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: currentColor;
+  color: #afb1b8;
+  transition: fill 250ms linear;
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    fill: #2196f3;
+  }
+}
+
 .nav__title {
   margin-top: 94px;
   margin-bottom: 50px;
@@ -20,23 +39,3 @@
   width: calc((100% - 150px) / 6);
   height: 90px;
 }
-
-.nav__link {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  display: block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: currentColor;
-  color: #afb1b8;
-  transition: fill 250ms linear;
-  &:hover,
-  &:focus {
-  border: 1px solid #2196f3;
-  fill: #2196f3;
-}
-}
-
