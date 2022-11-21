@@ -1,17 +1,17 @@
-.hero-menu {
+.card__menu {
   display: flex;
   gap: 30px;
   margin-top: 94px;
 }
 
-.item-list {
+.card__list {
   width: 270px;
   & {
   flex-basis: calc(100% - 90px / 4);
 }
 }
 
-.thumb-icon {
+.card__icon {
   display: flex;
   background-color: #f5f4fa;
   justify-content: center;
@@ -20,11 +20,8 @@
   border-radius: 4px;
 }
 
-.tagline {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+.card__title {
+  @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: #212121;
   & {
@@ -32,11 +29,8 @@
 }
 }
 
-.paragraph {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+.card__text {
+  @include font(400, 14px, 1.71, 0.03em);
   color: #757575;
   margin-bottom: 118px;
 }

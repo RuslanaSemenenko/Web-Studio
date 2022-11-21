@@ -22,95 +22,94 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="page">
-      <div class="container header-container">
+    <header class="header">
+      <div class="container header__container">
         <nav class="navigation">
           <a href="./index.html" class="logo">Web<span class="text">Studio</span></a>
           <ul class="menu">
-            <li class="item">
-              <a class="link current" href="./index.html">Студія</a>
+            <li class="menu__item">
+              <a class="menu__link current" href="./index.html">Студія</a>
             </li>
-            <li class="item">
-              <a class="link" href="./portfolio.html">Портфоліо</a>
+            <li class="menu__item">
+              <a class="menu__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="item">
-              <a class="link" href="./index.html">Контакти</a>
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html">Контакти</a>
             </li>
           </ul>
         </nav>
-        <div class="header-connect">
-          <ul class="header-menu">
-            <li class="list-item">
-              <a class="item-link" href="mailto:info@devstudio.com"
-                ><svg class="link-icon-soc" width="16px" height="12px">
+        <div class="connect">
+          <ul class="connect__menu">
+            <li class="connect__list">
+              <a class="connect__link" href="mailto:info@devstudio.com"
+                ><svg class="connect__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-email"></use></svg>info@devstudio.com
               </a>
             </li>
-            <li class="list-item">
-              <a class="item-link" href="tel:+380961111111"
-                ><svg class="link-icon-soc" width="16px" height="12px">
+            <li class="connect__list">
+              <a class="connect__link" href="tel:+380961111111"
+                ><svg class="connect__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    <main class="main-hero">
+    <main>
       <section class="container-box section">
         <div class="container">
           <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-      <section class="hero section">
-        <div class="container">
+      <section class="section">
+        <div class="card container">
           <h2 hidden>Переваги</h2>
-          <ul class="hero-menu">
-            <li class="item-list">
-              <div class="thumb-icon">
-                <svg class="thumb-icon" width="65.32">
+          <ul class="card__menu">
+            <li class="card__list">
+              <div class="card__icon">
+                <svg class="card__icon" width="65.32">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="tagline">Увага до деталей</h3>
-              <p class="paragraph">
+              <h3 class="card__title">Увага до деталей</h3>
+              <p class="card__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="item-list">
-              <div class="thumb-icon">
-                <svg class="thumb-icon" width="65.32">
+            <li class="card__list">
+              <div class="card__icon">
+                <svg class="card__icon" width="65.32">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="tagline">Пунктуальність</h3>
-              <p class="paragraph">
+              <h3 class="card__title">Пунктуальність</h3>
+              <p class="card__text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="item-list">
-              <div class="thumb-icon">
-                <svg class="thumb-icon" width="65.32">
+            <li class="card__list">
+              <div class="card__icon">
+                <svg class="card__icon" width="65.32">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="tagline">Планування</h3>
-              <p class="paragraph">
+              <h3 class="card__title">Планування</h3>
+              <p class="card__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="item-list">
-              <div class="thumb-icon">
-                <svg class="thumb-icon" width="65.32">
+            <li class="card__list">
+              <div class="card__icon">
+                <svg class="card__icon" width="65.32">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="tagline">Сучасні технології</h3>
-              <p class="paragraph">
+              <h3 class="card__title">Сучасні технології</h3>
+              <p class="card__text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -342,47 +341,47 @@
         </div>
       </section>
       <section class="section">
-        <div class="container">
-          <h2 class="caption-box">Постійні клієнти</h2>
-          <ul class="test-list">
-            <li class="test-item">
-              <a href="" class="test-link link">
-                <svg class="icon-linc-soc" width="106px" height="60px">
+        <div class="nav container">
+          <h2 class="nav__title">Постійні клієнти</h2>
+          <ul class="nav__menu">
+            <li class="nav__list">
+              <a href="" class="nav__link link">
+                <svg class="nav__soc" width="106" height="60">
                   <use href="./images/icons.svg#icon-yaco"></use>
                 </svg>
               </a>
             </li>
-            <li class="test-item">
-              <a href="" class="test-link link">
-                <svg class="icon-linc-soc" width="106px" height="60px">
+            <li class="nav__list">
+              <a href="" class="nav__link link">
+                <svg class="nav__soc" width="106" height="60">
                   <use href="./images/icons.svg#icon-tagline"></use>
                 </svg>
               </a>
             </li>
-            <li class="test-item">
-              <a href="" class="test-link link">
-                <svg class="icon-linc-soc" width="106px" height="60px">
+            <li class="nav__list">
+              <a href="" class="nav__link link">
+                <svg class="nav__soc" width="106" height="60">
                   <use href="./images/icons.svg#icon-company-three"></use>
                 </svg>
               </a>
             </li>
-            <li class="test-item">
-              <a href="" class="test-link link">
-                <svg class="icon-linc-soc" width="106px" height="60px">
+            <li class="nav__list">
+              <a href="" class="nav__link link">
+                <svg class="nav__soc" width="106" height="60">
                   <use href="./images/icons.svg#icon-foster-peters"></use>
                 </svg>
               </a>
             </li>
-            <li class="test-item">
-              <a href="" class="test-link link">
-                <svg class="icon-linc-soc" width="106px" height="60px">
+            <li class="nav__list">
+              <a href="" class="nav__link link">
+                <svg class="nav__soc" width="106" height="60">
                   <use href="./images/icons.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="test-item">
-              <a href="" class="test-link link">
-                <svg class="icon-linc-soc" width="106px" height="60px">
+            <li class="nav__list">
+              <a href="" class="nav__link link">
+                <svg class="nav__soc" width="106" height="60">
                   <use href="./images/icons.svg#icon-company-tagline"></use>
                 </svg>
               </a>

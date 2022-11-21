@@ -9,38 +9,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
-
     <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   <body>
-    <header class="page">
-      <div class="container header-container">
+    <header class="header">
+      <div class="container header__container">
         <nav class="navigation">
           <a class="logo" href="./index.html">Web<span class="text">Studio</span></a>
           <ul class="menu">
-            <li class="item">
-              <a class="link" href="./index.html">Студія</a>
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html">Студія</a>
             </li>
-            <li class="item">
-              <a class="link current" href="./index.html">Портфоліо</a>
+            <li class="menu__item">
+              <a class="menu__link current" href="./index.html">Портфоліо</a>
             </li>
-            <li class="item">
-              <a class="link" href="">Контакти</a>
+            <li class="menu__item">
+              <a class="menu__link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="menu">
-          <li class="list-item">
-            <a class="item-link" href="mailto:info@devstudio.com"><svg class="link-icon-soc" width="16px" height="12px">
+        <div class="connect">
+        <ul class="connect__menu">
+          <li class="connect__list">
+            <a class="connect__link" href="mailto:info@devstudio.com">
+              <svg class="connect__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>info@devstudio.com</a>
           </li>
-          <li class="list-item">
-            <a class="item-link" href="tel:+380961111111"><svg class="link-icon-soc" width="16px" height="12px">
+          <li class="connect__list">
+            <a class="connect__link" href="tel:+380961111111">
+              <svg class="connect__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>+38 096 111 11 11</a>
           </li>
         </ul>
+        </div>
       </div>
     </header>
     <main class="main-page">

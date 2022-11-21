@@ -1,10 +1,10 @@
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.page {
+.header {
   background: #ffffff;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -40,17 +40,14 @@
   margin-left: 93px;
 }
 
-.header-menu {
+.connect__menu {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.menu__link {
+  @include font(500, 14px, 1.14, 0.02em);
   color: #212121;
   text-decoration: none;
   transition: color 250ms linear;
@@ -60,7 +57,7 @@
 }
 }
 
-.link-icon-soc {
+.connect__icon {
   width: 16px;
   height: 12px;
   fill: currentColor;
@@ -68,22 +65,19 @@
   margin-right: 10px;
   vertical-align: middle;
   transition: fill 250ms linear;
-}
-
-.link-icon-soc {
+  & {
   margin-right: 10px;
   vertical-align: middle;
-  &:hover,
-  &:focus {
-  fill: #2196f3;
 }
 }
 
-.item-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  .connect__icon:hover,
+  .connect__icon:focus {
+  fill: #2196f3;
+}
+
+.connect__link {
+  @include font(500, 14px, 1.14, 0.02em);
   color: #757575;
   text-decoration: none;
   transition: color 250ms linear;
@@ -93,23 +87,20 @@
 }
 }
 
-.list-item:hover,
-.list-item:focus {
+.connect__link:hover .connect__icon,
+.connect__link:focus .connect__icon {
+  fill: #2196f3;
+}
+
+.connect__list:hover,
+.connect__list:focus {
   color: #2196f3;
   & {
   align-items: center;
 }
 }
 
-.list-item:hover svg {
-  fill: #2196f3;
-}
-
-.list-item:focus svg {
-  fill: #2196f3;
-}
-
-.link.current::after {
+.menu__link.current::after {
   content: '';
   position: absolute;
   left: 0;

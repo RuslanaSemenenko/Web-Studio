@@ -28,10 +28,7 @@
 }
 
 .address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
   color: #ffffff;
   text-decoration: none;
 }
@@ -73,10 +70,7 @@
 
 .footer-page {
   font-family: inherit;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
   padding-bottom: 20px;
@@ -93,10 +87,7 @@
 
 .footer-mailto {
   font-family: inherit;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
@@ -122,10 +113,7 @@
 }
 
 .list-item-link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
