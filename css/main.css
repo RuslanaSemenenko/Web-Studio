@@ -42,6 +42,12 @@ body {
   list-style: none;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -53,23 +59,20 @@ body {
   width: 1px;
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -218,6 +221,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: auto;
 }
 
 .container {
@@ -255,7 +259,6 @@ body {
 .mob__list-item,
 .mob__list-soc {
   list-style: none;
-  text-decoration: none;
 }
 
 .mob__link:not(:last-child) {
@@ -272,6 +275,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #757575;
+  text-decoration: none;
 }
 .mob__link-item:hover, .mob__link-item:focus {
   color: #2196f3;
@@ -281,10 +285,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  gap: 20p;
+  gap: 20px;
 }
 
-.mob__list-soc::after {
+.mob__list-soc:not(:last-child)::after {
   width: 22px;
   height: 0;
   position: absolute;
@@ -299,9 +303,16 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+  text-decoration: none;
 }
 
 .container-box {
+  background-color: #c4c4c4;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 1600px;
+  height: 400px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../);
   background: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;

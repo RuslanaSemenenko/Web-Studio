@@ -133,6 +133,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: auto;
   }
 }
 
@@ -172,7 +173,6 @@
 .mob__list-item,
 .mob__list-soc {
   list-style: none;
-  text-decoration: none;
 }
 
 .mob__link:not(:last-child) {
@@ -189,6 +189,7 @@
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #757575;
+  text-decoration: none;
   &:hover,
   &:focus {
     color: #2196f3;
@@ -199,10 +200,10 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  gap: 20p;
+  gap: 20px;
 }
 
-.mob__list-soc::after {
+.mob__list-soc:not(:last-child)::after {
   width: 22px;
   height: 0;
   position: absolute;
@@ -217,4 +218,5 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+  text-decoration: none;
 }
