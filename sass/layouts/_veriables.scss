@@ -1,13 +1,52 @@
 .card__menu {
-  display: flex;
-  gap: 30px;
-  margin-top: 94px;
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+
+  @media screen and (min-width: 768px) {
+     display: flex;
+     flex-wrap: nowrap;
+     gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+     display: flex;
+     gap: 30px;
+     margin-top: 94px;
+  }
+}
+
+
+.card__menu {
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) {
+     display: flex;
+     flex-wrap: nowrap;
+     gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+     display: flex;
+     gap: 30px;
+     margin-top: 94px;
+  }
+ 
 }
 
 .card__list {
-  width: 270px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    & {
+  flex-basis: calc(100% - 30px / 2);
+  }
+
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   & {
   flex-basis: calc(100% - 90px / 4);
+  }
 }
 }
 
@@ -21,16 +60,39 @@
 }
 
 .card__title {
-  @include font(700, 14px, 1.14, 0.03em);
+@media screen and (max-width: 768px) {
+    text-align: center;
+    @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: #212121;
   & {
   margin-bottom: 10px;
 }
+  }
+
+  @media screen and (min-width: 768px) {
+      @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: #212121;
+  & {
+  margin-bottom: 10px;
+}
+  }
+
+  @media screen and (min-width: 1200px) {
+      @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: #212121;
+  & {
+  margin-bottom: 10px;
+}
+  }
+  
+
 }
 
 .card__text {
   @include font(400, 14px, 1.71, 0.03em);
   color: #757575;
-  margin-bottom: 118px;
+  //margin-bottom: 118px;
 }
