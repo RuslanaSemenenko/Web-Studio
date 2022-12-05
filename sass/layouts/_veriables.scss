@@ -1,53 +1,53 @@
 .card__menu {
-display: flex;
-flex-wrap: wrap;
-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 
   @media screen and (min-width: 768px) {
-     display: flex;
-     flex-wrap: nowrap;
-     gap: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
   }
   @media screen and (min-width: 1200px) {
-     display: flex;
-     gap: 30px;
-     margin-top: 94px;
+    display: flex;
+    gap: 30px;
+    margin-top: 94px;
   }
 }
 
-
 .card__menu {
   margin-top: 60px;
+  display: flex;
+  //flex-wrap: nowrap;
+  gap: 30px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 768px) {
-     display: flex;
-     flex-wrap: nowrap;
-     gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   @media screen and (min-width: 1200px) {
-     display: flex;
-     gap: 30px;
-     margin-top: 94px;
+    display: flex;
+    gap: 30px;
+    margin-top: 94px;
   }
- 
 }
 
 .card__list {
   width: 100%;
 
-  @media screen and (min-width: 768px) {
-    width: 100%;
-    & {
-  flex-basis: calc(100% - 30px / 2);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px) / 2);
   }
 
-  }
   @media screen and (min-width: 1200px) {
-    width: 270px;
-  & {
-  flex-basis: calc(100% - 90px / 4);
+    //width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
   }
-}
 }
 
 .card__icon {
@@ -60,35 +60,33 @@ gap: 30px;
 }
 
 .card__title {
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     text-align: center;
     @include font(700, 14px, 1.14, 0.03em);
-  text-transform: uppercase;
-  color: #212121;
-  & {
-  margin-bottom: 10px;
-}
+    text-transform: uppercase;
+    color: #212121;
+    & {
+      margin-bottom: 10px;
+    }
   }
 
   @media screen and (min-width: 768px) {
-      @include font(700, 14px, 1.14, 0.03em);
-  text-transform: uppercase;
-  color: #212121;
-  & {
-  margin-bottom: 10px;
-}
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: #212121;
+    & {
+      margin-bottom: 10px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
-      @include font(700, 14px, 1.14, 0.03em);
-  text-transform: uppercase;
-  color: #212121;
-  & {
-  margin-bottom: 10px;
-}
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: #212121;
+    & {
+      margin-bottom: 10px;
+    }
   }
-  
-
 }
 
 .card__text {
