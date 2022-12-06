@@ -1,11 +1,87 @@
+.footer-box-container {
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    //row-gap: 60px;
+}
+}
+
+.modal-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  gap: 10px;
+  padding: 10px 28px;
+  position: relative;
+  & {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: inline;
+  min-width: 200px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 1199px) {
+    margin-top: 20px;
+}
+}
+
+.address-list {
+@media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+}
+}
+
+.footer-box {
+@media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+}
+}
+
+.box-mailto {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+}
+}
+
 .box {
   background: #2f303a;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-icon {
-  font-family: 'Raleway', sans-serif;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #2196f3;
+  text-decoration: none;
+  text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+     font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -16,6 +92,16 @@
   margin: 0;
   margin-bottom: 20px;
 }
+  }
+ 
+}
+
+.modal-form {
+  text-align: center;
+}
+
+.footer-label {
+  display: block;
 }
 
 .text-logo {
@@ -34,8 +120,15 @@
 }
 
 .address-list {
-  margin-top: 20px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+     margin-top: 20px;
   flex-direction: column;
+  }
+ 
 }
 
 .footer-soc-item {
@@ -77,12 +170,18 @@
 }
 
 .footer-box {
-  margin-left: 70px;
+  @media screen and (min-width: 1200px) {
+margin-left: 70px;
+  }
+  
 }
 
 .footer-box-container {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
   align-items: baseline;
+  }
+  
 }
 
 .footer-mailto {
@@ -91,10 +190,18 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+}
+  
 }
 
 .box-mailto {
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+margin-left: 93px;
+  }
+  
 }
 
 .icon-telegram {
