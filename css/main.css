@@ -821,6 +821,8 @@ body {
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  width: 210px;
+  height: 92px;
   display: block;
   display: flex;
   align-items: center;
@@ -854,6 +856,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin-bottom: 94px;
 }
 
 @media screen and (min-width: 480px) {
