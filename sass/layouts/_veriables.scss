@@ -92,5 +92,6 @@
 .card__text {
   @include font(400, 14px, 1.71, 0.03em);
   color: #757575;
+  margin-bottom: 60px;
   //margin-bottom: 118px;
 }

@@ -652,6 +652,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -731,18 +732,31 @@ body {
   margin-bottom: 50px;
 }
 
-.secondary-item {
-  flex-wrap: wrap;
+@media screen and (min-width: 480px) {
+  .secondary-item {
+    margin-top: 30px;
+  }
+}
+
+.secondary-menu-list {
+  justify-content: center;
+}
+
+.box-list {
+  gap: 30px;
 }
 
 .secondary-menu-list {
   text-align: center;
   flex-wrap: wrap;
-  display: block;
+  gap: 30px;
+  list-style-type: none;
 }
 @media screen and (min-width: 768px) {
   .secondary-menu-list {
     flex-basis: calc((100% - 30px) / 2);
+    display: flex;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
