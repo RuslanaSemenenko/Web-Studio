@@ -52,7 +52,7 @@
             </li>
             <li class="connect__list">
               <a class="connect__link" href="tel:+380961111111"
-                ><svg class="connect__icon" width="16" height="12">
+                ><svg class="connect__icon" width="12" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
             </li>
           </ul>
@@ -66,7 +66,11 @@
       <div class="mob__menu is-hidden" data-menu>
         <div class="container">
           <div class="mob-menu-top">
-        <button class="menu__close" data-menu-close>X</button>
+        <button class="menu__close" data-menu-close>
+          <svg class="modal__menu" width="24" height="24">
+            <use href="./images/icons.svg#icon-close-black2"></use>
+          </svg>
+        </button>
         <ul class="mob-menu">
             <li class="mob__item">
               <a class="mob__link current" href="./index.html">Студія</a>
@@ -215,11 +219,12 @@
           <div class="box-secondary-menu">
             <ul class="secondary-menu-list">
               <li class="secondary-item">
+               
                 <img
                   class="icon"
-                  srcset="./images/img1.jpg 1x, ./images/team-1-desktop@2x.jpg 2x"
-                  srcset="./images/img1.jpg 1x, ./images/team-1-tablet@2x.jpg 2x"
-                  srcset="./images/img1.jpg 1x, ./images/team-1-mobile@2x.jpg 2x"
+                  srcset="./images/img1.jpg 1x, ./images/team-1-desktop@2x.jpg 2x" media="(min-width: 1200px)"
+                  srcset="./images/img1.jpg 1x, ./images/team-1-tablet@2x.jpg 2x" media="(min-width: 768px)"
+                  srcset="./images/img1.jpg 1x, ./images/team-1-mobile@2x.jpg 2x" media="(max-width: 767px)"
                   src="./images/img1.jpg"
                   alt="Ігор Дем'яненко"
                   width="270"

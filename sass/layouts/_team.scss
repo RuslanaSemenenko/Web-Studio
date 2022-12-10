@@ -8,7 +8,7 @@
 }
 
 .secondary-item {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-top: 30px;
   }
 }

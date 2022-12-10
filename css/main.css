@@ -327,8 +327,6 @@ body {
 }
 
 .connect__icon {
-  width: 16px;
-  height: 12px;
   fill: currentColor;
   color: #afb1b8;
   margin-right: 10px;
@@ -338,6 +336,11 @@ body {
 .connect__icon {
   margin-right: 10px;
   vertical-align: middle;
+}
+@media screen and (min-width: 1200px) {
+  .connect__icon {
+    margin-left: 40px;
+  }
 }
 
 .connect__icon:hover,
@@ -353,6 +356,14 @@ body {
   color: #757575;
   text-decoration: none;
   transition: color 250ms linear;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .connect__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 }
 .connect__link:hover, .connect__link:focus {
   color: #2196f3;
@@ -372,6 +383,12 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .connect__list {
+    padding-bottom: 5px;
+  }
+}
+
 .menu__link.current::after {
   content: "";
   position: absolute;
@@ -384,13 +401,33 @@ body {
   background-color: #2196f3;
   position: relative;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu__link.current::after {
+    bottom: -35px;
+  }
+}
+
+.current {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+@media screen and (max-width: 767px) {
+  .current {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+  }
+}
 
 .container-box {
   background-color: #c4c4c4;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
-  height: 400px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob2x.jpg);
   background-repeat: no-repeat;
@@ -400,8 +437,6 @@ body {
 @media screen and (min-width: 768px) {
   .container-box {
     background-color: #c4c4c4;
-    max-width: 768px;
-    height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tablet-2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -414,8 +449,6 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 1600px;
-    height: 600px;
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -732,7 +765,7 @@ body {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .secondary-item {
     margin-top: 30px;
   }
@@ -918,8 +951,54 @@ body {
   }
 }
 
+.modal-input {
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  margin-right: 15px;
+  color: #afb1b8;
+}
+@media screen and (max-width: 767px) {
+  .modal-input {
+    width: 100%;
+  }
+}
+.modal-input::-moz-placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.modal-input:-ms-input-placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.modal-input::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
 .menu-list {
   margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .menu-list {
+    margin-bottom: 60px;
+  }
 }
 
 .modal-btn {
@@ -970,11 +1049,6 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .footer-box {
-    margin-bottom: 60px;
-  }
-}
 @media screen and (min-width: 768px) {
   .footer-box {
     padding-top: 60px;
@@ -1153,6 +1227,11 @@ body {
   justify-content: center;
   gap: 10px;
 }
+@media screen and (max-width: 768px) {
+  .images-links {
+    margin-bottom: 60px;
+  }
+}
 
 .list-item-link {
   font-weight: 400;
@@ -1184,9 +1263,24 @@ body {
   transform: translate(-50%, -50%);
   padding: 40px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
   }
 }
 
@@ -1219,41 +1313,6 @@ body {
   color: #212121;
   text-align: center;
   margin-bottom: 12px;
-}
-
-.modal-input {
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  padding-left: 16px;
-  color: #afb1b8;
-}
-.modal-input::-moz-placeholder {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.67;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
-.modal-input:-ms-input-placeholder {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.67;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
-.modal-input::placeholder {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.67;
-  letter-spacing: 0.01em;
-  color: #757575;
 }
 
 .modal-form-text {

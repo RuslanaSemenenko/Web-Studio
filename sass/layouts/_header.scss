@@ -212,8 +212,6 @@
 }
 
 .connect__icon {
-  width: 16px;
-  height: 12px;
   fill: currentColor;
   color: #afb1b8;
   margin-right: 10px;
@@ -223,6 +221,10 @@
     margin-right: 10px;
     vertical-align: middle;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 40px;
+  }
 }
 
 .connect__icon:hover,
@@ -231,6 +233,9 @@
 }
 
 .connect__link {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include font(500, 12px, 1.14, 0.02em);
+  }
   @include font(500, 14px, 1.14, 0.02em);
   color: #757575;
   text-decoration: none;
@@ -254,6 +259,12 @@
   }
 }
 
+.connect__list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 5px;
+  }
+}
+
 .menu__link.current::after {
   content: '';
   position: absolute;
@@ -266,4 +277,24 @@
   border-radius: 2px;
   background-color: #2196f3;
   position: relative;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    bottom: -35px;
+  }
+}
+
+.current {
+
+  @media screen and (max-width: 767px) {
+   font-weight: 500;
+   font-size: 40px;
+   line-height: 1.75;
+   letter-spacing: 0.02em;
+   color: #2196F3;
+  }
+ 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }

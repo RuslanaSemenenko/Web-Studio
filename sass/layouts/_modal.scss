@@ -18,11 +18,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 
-  @media screen and (max-width: 1199px)
-{
+  @media screen and (min-width: 480px) {
     width: 450px;
-}
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .modal-close {
@@ -39,9 +49,9 @@
   justify-content: center;
   cursor: pointer;
   &:hover svg {
-  fill: #2196f3;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    fill: #2196f3;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .modal-titel {
@@ -54,25 +64,6 @@
   color: #212121;
   text-align: center;
   margin-bottom: 12px;
-}
-
-.modal-input {
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  padding-left: 16px;
-  color: #afb1b8;
-  &::placeholder {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.67;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
 }
 
 .modal-form-text {
@@ -95,14 +86,14 @@
   display: flex;
   align-items: center;
 
-   @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     font-family: inherit;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.67;
     letter-spacing: 0.03em;
     color: #757575;
-}
+  }
 }
 
 .check-text span {
@@ -148,17 +139,17 @@
   margin-top: 30px;
   transition: color 250ms linear;
   & {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.75;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  padding: 10px 52px;
-}
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.75;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    padding: 10px 52px;
+  }
 }
 
 .text-coment {
@@ -169,11 +160,11 @@
   padding: 12px 16px;
   resize: none;
   & {
-  font-family: inherit;
-  font-size: 12px;
-  line-height: 1.67;
-  letter-spacing: 0.01em;
-}
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+  }
 }
 
 .text-coment:focus {
@@ -190,8 +181,8 @@
   cursor: pointer;
   transition: border-color 250ms linear, fill 250ms linear;
   &:focus {
-  border-color: #2196f3;
-}
+    border-color: #2196f3;
+  }
 }
 
 .input-modal:focus + .modal-input-icon {
