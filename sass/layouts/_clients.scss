@@ -45,6 +45,10 @@
   justify-content: center;
   gap: 30px;
   margin-bottom: 94px;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 30px;
+  }
 }
 
 .nav__list {
